@@ -1,7 +1,9 @@
-<div class="container">
-  <section>
-    <div class="h4">General</div>
-    <hr>
-
-  </section>
+<app-carousel></app-carousel>
+<div class="row">
+<div class="w-75 p-5">
+ <app-row-cards *ngFor="let homeRow of homeContent" [homeRow]="homeRow"></app-row-cards>
 </div>
+<div class="w-25 p-5">
+<app-notifications></app-notifications>
+ </div>
+ </div>
