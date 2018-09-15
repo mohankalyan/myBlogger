@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -8,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { RowCardsComponent } from './home/row-cards/row-cards.component';
 import { NotificationsComponent } from './home/notifications/notifications.component';
 import { CarouselComponent } from './home/carousel/carousel.component';
+import { CreatePostComponent } from './create-post/create-post.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { CarouselComponent } from './home/carousel/carousel.component';
     HomeComponent,
     RowCardsComponent,
     NotificationsComponent,
-    CarouselComponent
+    CarouselComponent,
+    CreatePostComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
