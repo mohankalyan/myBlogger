@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreatePostComponent implements OnInit {
 
-  constructor() { }
+
+  categories:any=['General','Health','Science & Technology','Business','Entertainment','Sports'];
+  myPost:any={};
+
+  constructor() {
+    this.categories=['General','Health','Science & Technology','Business','Entertainment','Sports'];;
+   }
 
   ngOnInit() {
   }

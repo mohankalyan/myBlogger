@@ -1,6 +1,8 @@
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule } from '@angular/forms';
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,6 +12,7 @@ import { RowCardsComponent } from './home/row-cards/row-cards.component';
 import { NotificationsComponent } from './home/notifications/notifications.component';
 import { CarouselComponent } from './home/carousel/carousel.component';
 import { CreatePostComponent } from './create-post/create-post.component';
+import { AllPostsComponent } from './all-posts/all-posts.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,15 @@ import { CreatePostComponent } from './create-post/create-post.component';
     RowCardsComponent,
     NotificationsComponent,
     CarouselComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    AllPostsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    FroalaEditorModule.forRoot(),
+     FroalaViewModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

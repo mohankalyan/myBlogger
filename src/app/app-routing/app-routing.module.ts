@@ -1,3 +1,4 @@
+import { AllPostsComponent } from './../all-posts/all-posts.component';
 import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
@@ -8,6 +9,7 @@ import { HomeComponent } from '../home/home.component';
 const appRoutes:Routes=[
   {path:'',component:HomeComponent},
   {path:'createpost',component:CreatePostComponent},
+  {path:'categories/:category',component:AllPostsComponent}
 ];
 
 @NgModule({

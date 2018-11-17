@@ -7,26 +7,26 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" routerLink='/'>Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">General</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink='/categories/general'>General</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Health</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink='/categories/health'>Health</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Science & Technology</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink='/categories/scienceTech'>Science & Technology</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Business</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink='/categories/business'>Business</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Entertainment</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink='/categories/entertainment'>Entertainment</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Sports</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink='/categories/sports'>Sports</a>
       </li>
     </ul>
     <span class="navbar-text">
