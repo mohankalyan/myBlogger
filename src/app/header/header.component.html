@@ -10,24 +10,10 @@
       <li class="nav-item" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">
         <a class="nav-link" routerLink='/'>Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink='/categories/general'>General</a>
+      <li class="nav-item" routerLinkActive="active" *ngFor='let category of homeContent'>
+        <a class="nav-link" routerLink={{getLink(category)}}>{{category.category}}</a>
       </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink='/categories/health'>Health</a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink='/categories/scienceTech'>Science & Technology</a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink='/categories/business'>Business</a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink='/categories/entertainment'>Entertainment</a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink='/categories/sports'>Sports</a>
-      </li>
+      
     </ul>
     <span class="navbar-text">
       <form class="form-inline my-2 my-lg-0">

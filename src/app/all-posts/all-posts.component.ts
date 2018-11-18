@@ -9,7 +9,8 @@ import { Subscription } from 'rxjs';
 })
 export class AllPostsComponent implements OnInit,OnDestroy {
 
-  category:String='';
+  category:string='';
+  categoryId:string='';
   paramsSubscription:Subscription;
   constructor(private route:ActivatedRoute) { }
 
@@ -19,6 +20,7 @@ export class AllPostsComponent implements OnInit,OnDestroy {
                           .subscribe(
                             (params: Params) => {
                               this.category=params['category'];
+                              this.categoryId=params['categoryId'];
                             }
                           );
   }

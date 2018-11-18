@@ -14,4 +14,6 @@ export class RowCardsComponent implements OnInit {
   ngOnInit() {
   }
 
+  createLink = (cat,articleId) => "/categories/"+cat.categoryId+"/"+articleId;
+
 }

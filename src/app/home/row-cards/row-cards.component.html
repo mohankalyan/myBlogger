@@ -4,13 +4,16 @@
   <div class="card-group">
     <div class="card" *ngFor="let article of homeRow.articles">
       <!-- <img class="card-img-top" src="assets/images/download.svg" alt="Card image cap"> -->
+      <a routerLink={{createLink(homeRow,article.articleId)}}>
       <div class="card-body">
         <h5 class="card-title">{{article.articleTitle}}</h5>
         <p class="card-text text-truncate">{{article.articleDesc}}</p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated {{article.updated}}</small>
+      
       </div>
+    </a>
     </div>
     
   </div>

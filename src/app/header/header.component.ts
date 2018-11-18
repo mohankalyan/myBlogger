@@ -1,3 +1,4 @@
+import { HomeService } from './../home/services/home.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  homeContent:any;
+  constructor( private homeService:HomeService) { }
 
   ngOnInit() {
+    this.homeContent=this.homeService.getHomeContent();
   }
 
+  getLink = (cat) => "/categories/"+cat.categoryId;
 }

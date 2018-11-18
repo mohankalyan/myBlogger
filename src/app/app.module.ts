@@ -13,6 +13,8 @@ import { NotificationsComponent } from './home/notifications/notifications.compo
 import { CarouselComponent } from './home/carousel/carousel.component';
 import { CreatePostComponent } from './create-post/create-post.component';
 import { AllPostsComponent } from './all-posts/all-posts.component';
+import { ListPostsComponent } from './all-posts/list-posts/list-posts.component';
+import { ArticleComponent } from './all-posts/article/article.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AllPostsComponent } from './all-posts/all-posts.component';
     NotificationsComponent,
     CarouselComponent,
     CreatePostComponent,
-    AllPostsComponent
+    AllPostsComponent,
+    ListPostsComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
